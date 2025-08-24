@@ -1,17 +1,31 @@
+# 성과 목표
 target_acos: 0.2
 lookback_days: 7
-min_clicks_for_decision: 20
+
+# 데이터 최소 조건
+min_clicks_for_decision: 15
 min_orders_for_promo: 2
+
+# 입찰 조정 규칙
 increase_bid_pct: 0.15
 decrease_bid_pct: 0.12
 min_bid: 0.1
-max_bid: 5.0
+max_bid: 1.8
+
+# 베이지안 보정(click, impression 적은 데이터 보정)
 bayes_prior_clicks: 15
 bayes_prior_cvr: 0.08
+
+# 브랜드 관련
 brand_terms:
 - pawpang
 brand_is_floor: 0.7
 generic_is_floor: 0.12
-negation_spend_threshold: 5.0
+
+# negative, havest
+negation_spend_max_threshold: 5.0
+negation_click_min_threshold: 10
 harvest_exact_threshold_acos: 0.22
+
+# 통화 단위
 currency: USD
