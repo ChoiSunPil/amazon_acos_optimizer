@@ -1,0 +1,17 @@
+target_acos: 0.2
+lookback_days: 7
+min_clicks_for_decision: 20
+min_orders_for_promo: 2
+increase_bid_pct: 0.15
+decrease_bid_pct: 0.12
+min_bid: 0.1
+max_bid: 5.0
+bayes_prior_clicks: 15
+bayes_prior_cvr: 0.08
+brand_terms:
+- pawpang
+brand_is_floor: 0.7
+generic_is_floor: 0.12
+negation_spend_threshold: 5.0
+harvest_exact_threshold_acos: 0.22
+currency: USD
